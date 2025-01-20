@@ -108,7 +108,6 @@
 # sum = apples + bananas
 # puts "I have #{sum} total fruits."
 
-#When I added the ID part, it adds the Not Eligible from the first if/else statement
 # puts "Enter your age:" 
 # age = gets.chomp.to_i 
 
@@ -236,5 +235,106 @@
 #     n += 1 #same thing as n = n + 1, just different format
 # end
 
-#Day 4 
-#Alanna
+#Loops (above)
+# input = "" 
+# while input != "stop" 
+#   puts "Type something (or 'stop' to quit):" 
+#   input = gets.chomp 
+#   puts "You typed: #{input}" unless input == "stop" 
+# end 
+# puts "Program ended."
+
+#For loop:
+# for i in 1..5 
+#   puts i 
+# end
+
+# matrix = [ 
+#   [1,2,3], 
+#   [4,5,6], 
+#   [7,8,9] 
+# ] 
+
+# matrix.each do |row| 
+#   row.each { |num| print "#{num * 2} " } 
+#   puts 
+# end
+
+# contacts = { 
+#   "Alice" => { phone: "123-4567", email: "alice@example.com" }, 
+#   "Bob" => { phone: "987-6543", email: "bob@example.com" } 
+# } 
+
+# puts "Enter a contact name:" 
+# name = gets.chomp.capitalize
+
+# if contacts.has_key?(name) 
+#   puts "#{name}'s phone: #{contacts[name][:phone]}" 
+#   puts "#{name}'s email: #{contacts[name][:email]}" 
+# else
+#   puts "Contact not found. Would you like to add a new contact?"
+#   input = gets.chomp.downcase
+#   if input == "yes"
+#     puts "Please input #{name}'s number."
+#     gets.chomp.to_i
+#     puts "Thank you. Now input #{name}'s email."
+#     gets.chomp.downcase
+#     puts "Great. #{name} is now added as a contact."
+#   else
+#   puts "Okay."
+#   end
+# end
+
+#Age Calculator
+# puts "What is your age?" 
+# age = gets.chomp.to_i 
+# current_year = Time.now.year 
+# year_born = current_year - age 
+# puts "You were born in #{year_born}."
+
+#Simple Calculator
+# puts "Enter first number:" 
+# num1 = gets.chomp.to_f 
+
+# puts "Enter second number:" 
+# num2 = gets.chomp.to_f 
+
+# puts "Choose an operation (+, -, *, /):" 
+# op = gets.chomp 
+
+# result = case op 
+#          when "+" 
+#            num1 + num2 
+#          when "-" 
+#            num1 - num2 
+#          when "*" 
+#            num1 * num2 
+#          when "/" 
+#            (num2 != 0) ? (num1 / num2) : "Error: division by zero" 
+#          else 
+#            "Invalid operation" 
+#          end 
+
+# puts "The result is: #{result}"
+
+# def sum_all(*numbers) 
+#   numbers.sum 
+# end 
+
+# puts sum_all(1,2,3,4) # 10 
+# puts sum_all(5,10) # 15
+
+# def countdown(n) 
+#   if n <= 0 
+#     puts "Time's up!" 
+#   else 
+#     puts n 
+#     countdown(n - 1) 
+#   end 
+# end 
+
+# puts "Start from?" 
+# start = gets.chomp.to_i 
+# countdown(start)
+ 
+
