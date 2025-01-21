@@ -52,7 +52,12 @@
 # quotient = number3 / number4
 # puts quotient
 
-# #!!!Couldnt hear, play back recording for after activity one 
+#you can print in different ways.
+#can type puts (puts string), p (print everything after), or print (raw).
+
+# puts "Hi Class"
+# p "Hi Class"
+# print "Hi Class"
 
 # #Modulo - % - gives you the remainder of a division operation
 # # remainder = 20 % 3
