@@ -113,16 +113,16 @@
 #   end
 # end
 
-movies = [
-  ["Romance", ["Pride & Prejudice", "Clueless"]],
-  ["Horror", ["Conjuring", "Insidious"]]
-]
-movies.each do |genre, titles|
-  puts "#{genre} Movies:"
-  titles.each do |title|
-   puts "- #{title}"
-  end
-end
+# movies = [
+#   ["Romance", ["Pride & Prejudice", "Clueless"]],
+#   ["Horror", ["Conjuring", "Insidious"]]
+# ]
+# movies.each do |genre, titles|
+#   puts "#{genre} Movies:"
+#   titles.each do |title|
+#    puts "- #{title}"
+#   end
+# end
 
 
 
