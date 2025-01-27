@@ -69,27 +69,27 @@
 # p filter_words(words)
 
 
-grades = [87, 93, 65, 20, 74] #expect B, A, D, F, C
-student1 = [92, 97, 89, 99, 100]
+# grades = [87, 93, 65, 20, 74] #expect B, A, D, F, C
+# student1 = [92, 97, 89, 99, 100]
 
-def grade_students(score)
-  letter_grade = []
+# def grade_students(score)
+#   letter_grade = []
 
-  score.each do |grade|
-    if grade >= 90
-      letter_grade.push("A")
-    elsif grade < 90 && grade >= 80
-      letter_grade.push("B")
-    elsif grade < 80 && grade >= 69
-      letter_grade.push("C")
-    elsif grade < 70 && grade >= 59
-      letter_grade.push("D")
-    else
-      letter_grade.push("F")
-    end
-  end
-  return letter_grade
-end
+#   score.each do |grade|
+#     if grade >= 90
+#       letter_grade.push("A")
+#     elsif grade < 90 && grade >= 80
+#       letter_grade.push("B")
+#     elsif grade < 80 && grade >= 69
+#       letter_grade.push("C")
+#     elsif grade < 70 && grade >= 59
+#       letter_grade.push("D")
+#     else
+#       letter_grade.push("F")
+#     end
+#   end
+#   return letter_grade
+# end
 
-# p grade_students(grades)
-p grade_students(student1)
+# # p grade_students(grades)
+# p grade_students(student1)
