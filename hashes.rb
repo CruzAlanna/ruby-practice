@@ -87,21 +87,21 @@
 # end 
 
 #nested arrays and hashes
-people = [
-{name: "Alanna", age: 23, city: "Tamuning"},
-{name: "Emily", age: 22, city: "Bedford"},
-{name: "Maile", age: 22, city: "Oahu"},
-{name: "Elijah", age: 26, city: "Mangilao"}
-]
+# people = [
+# {name: "Alanna", age: 23, city: "Tamuning"},
+# {name: "Emily", age: 22, city: "Bedford"},
+# {name: "Maile", age: 22, city: "Oahu"},
+# {name: "Elijah", age: 26, city: "Mangilao"}
+# ]
 
-people[4] = {name: "Mamie", age: 1, city: "Tamuning"}
-people[0][:age] = 22 
-# people.delete(people[0]) 
-people.delete(people[2][:age]) #doesn't work 
+# people[4] = {name: "Mamie", age: 1, city: "Tamuning"}
+# people[0][:age] = 22 
+# # people.delete(people[0]) 
+# people.delete(people[2][:age]) #doesn't work 
 
 # people.each do |person| #we have to access the array (|(each data set)|)
 #   # accessing specific parts of the data inside the interpolation.
 #   puts "Hi my name is #{person[:name]}. I'm #{person[:age]} years old, and I'm from #{person[:city]}."
 # end
 
-p people
+# p people

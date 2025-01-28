@@ -64,10 +64,10 @@
 
 # #Day 3
 #Contact List
-contacts = {
-  name: Alanna--phone: 123-4567 ,
-  name: Elijah--phone: 891-0111
-}
+# contacts = {
+#   name: Alanna--phone: 123-4567 ,
+#   name: Elijah--phone: 891-0111
+# }
 
 # loop do
 #   puts "Please select from the following menu. Input a number. \n"
