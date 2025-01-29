@@ -56,31 +56,32 @@
 #   puts "#{via.capitalize}: #{info}"
 # end
 
-students = {
-  john: {math: "76", english: "95", art: "100" },
-  jane: {math: "90", english: "76", art: "92" },
-  jack: {math: "65", english: "98", art: "100" }
-}
+# students = {
+#   john: {math: "76", english: "95", art: "100" },
+#   jane: {math: "90", english: "76", art: "92" },
+#   jack: {math: "65", english: "98", art: "100" }
+# }
 
-# students.each do |name, grades|
-#   puts "#{name}- "
-#   grades.each do |subject, score|
-#     puts "#{subject}: #{score}"
-#   end
-# end
+# # students.each do |name, grades|
+# #   puts "#{name}- "
+# #   grades.each do |subject, score|
+# #     puts "#{subject}: #{score}"
+# #   end
+# # end
 
-# change data
-p students[:jack]
-students[:jack][:math] = 78
-p students[:jack]
+# # change data
+# p students[:jack]
+# students[:jack][:math] = 78
+# p students[:jack]
 
-# delete data
-p students[:jack]
-students[:jack].delete(:english)
-p students[:jack]
+# # delete data
+# p students[:jack]
+# students[:jack].delete(:english)
+# p students[:jack]
 
-# add = adding a new key value pair (pe: 100)
-p students[:jack]
-students[:jack][:pe] = "100"
-p students[:jack]
+# # add = adding a new key value pair (pe: 100)
+# p students[:jack]
+# students[:jack][:pe] = "100"
+# p students[:jack]
+
 
