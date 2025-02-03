@@ -62,8 +62,8 @@
 #   end
 # end
 
-# #Day 3
-#Contact List
+#Day 3
+# Contact List
 # contacts = {
 #   name: Alanna--phone: 123-4567 ,
 #   name: Elijah--phone: 891-0111
@@ -105,3 +105,14 @@
 #     puts "Invaild choice. Please try again."
 #   end
 # end
+
+#Day 4
+# puts "Enter numbers separated by commas:"
+# numbers = 5, 10, 15, 20, 25
+
+# Statistics:
+# Sum: 75
+# Average: 15.0
+# Maximum: 25
+# Minimum: 5
+# Sorted Numbers: [5, 10, 15, 20, 25]

@@ -1,10 +1,3 @@
-# products = [
-#   { name: "Laptop", price: 1000, tags: ["electronics", "computers"] },
-#   { name: "Book", price: 20, tags: ["education", "literature"] },
-#   { name: "Coffee Mug", price: 10, tags: ["kitchen", "beverage"] }
-# ]
-
-
 catalog = [
   { item: "Apple",
     price: 0.45,
