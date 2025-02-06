@@ -72,51 +72,52 @@
 
 
 #super- adds to previous method. using (super + "whatever you want to add to the method")
-# class Person
-#   attr_accessor :name, :age
+class Person
+  attr_accessor :name, :age
 
-#   def initialize(name, age) #name and age are called "attributes, parameters, arguments" there are many names.
-#     @name = name
-#     @age = age
-#   end
+  def initialize(name, age)#name and age are called "attributes, parameters, arguments" there are many names.
+    raise ArgumentError, 'Age must be a positive number' if age < 0
+    @name = name
+    @age = age
+  end
 
-#   def introduce
-#     puts "Hi my name is #{@name} and I am #{@age} years old."
-#   end
-# end
+  def introduce
+    puts "Hi my name is #{@name} and I am #{@age} years old."
+  end
+end
 
-# class Teacher < Person
-#   attr_accessor :name, :age, :subject, :years_of_experience #not necessary in this case, but if needed sometime later, why not
+class Teacher < Person
+  attr_accessor :name, :age, :subject, :years_of_experience #not necessary in this case, but if needed sometime later, why not
 
-#   def initialize(name, age, subject, years_of_experience)
-#     super(name, age)
-#     @subject = subject
-#     @years_of_experience = years_of_experience
-#   end
+  def initialize(name, age, subject, years_of_experience)
+    super(name, age)
+    @subject = subject
+    @years_of_experience = years_of_experience
+  end
 
-#   def introduce
-#     # puts "#{super}I've been teaching #{@subject} for #{@years_of_experience} years." #the puts is optional really
-#     #"I am a teacher"#this will rewrite instead of adding
-#   end
-# end
+  def introduce
+    puts "#{super}I've been teaching #{@subject} for #{@years_of_experience} years." #the puts is optional really
+    #"I am a teacher"#this will rewrite instead of adding
+  end
+end
 
 # person1 = Teacher.new("Jessie", 34, "Social Studies", 4)
 # puts person1.introduce
 
 
-# class Student < Person
-#   attr_accessor :name, :age, :grade, :school
+class Student < Person
+  attr_accessor :name, :age, :grade, :school
 
-#   def initialize(name, age, grade, school)
-#     super(name, age)
-#     @grade = grade
-#     @school = school
-#   end
+  def initialize(name, age, grade, school)
+    super(name, age)
+    @grade = grade
+    @school = school
+  end
 
-#   def introduce
-#     "#{super}I am in #{@grade} grade and go to #{@school}."
-#   end
-# end
+  def introduce
+    "#{super}I am in #{@grade} grade and go to #{@school}."
+  end
+end
 
 # # person2 = Person.new("Tod", 17)
 # # puts person2.introduce

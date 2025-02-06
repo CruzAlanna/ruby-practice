@@ -9,5 +9,5 @@ class Calculator
   end
 end
 
-calc = Calculator.new 
-puts calc.add(4, 2) #this is manual testing
+# calc = Calculator.new 
+# puts calc.add(4, 2) #this is manual testing
