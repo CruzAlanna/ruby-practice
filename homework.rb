@@ -107,12 +107,18 @@
 # end
 
 #Day 4
-# puts "Enter numbers separated by commas:"
-# numbers = 5, 10, 15, 20, 25
+puts "Enter numbers separated by commas:"
+numbers = gets.chomp.split(',')
+num_array = []
+num_array << numbers
 
+num_array.each_with_index do |num|
+  num.to_i
+end
 # Statistics:
 # Sum: 75
 # Average: 15.0
 # Maximum: 25
 # Minimum: 5
 # Sorted Numbers: [5, 10, 15, 20, 25]
+p num_array

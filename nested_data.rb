@@ -34,40 +34,40 @@
 # end
 
 
-# student = {
-#   name: "John",
-#   grades: {
-#     math: "76",
-#     science: "80",
-#     english: "95",
-#     art: "100"
-#   },
-#   contact: {
-#     email: "john@mail.com",
-#     phone: "123-4567"
-#   }
-# }
+student = {
+  name: "John",
+  grades: {
+    math: "76",
+    science: "80",
+    english: "95",
+    art: "100"
+  },
+  contact: {
+    email: "john@mail.com",
+    phone: "123-4567"
+  }
+}
 
-# student[:grades].each do |subject, score|
-#   puts subject, score
+student[:grades].each do |subject, score|
+  puts subject, score
+end
+
+student[:contact].each do |via, info|
+  puts "#{via.capitalize}: #{info}"
+end
+
+students = {
+  john: {math: "76", english: "95", art: "100" },
+  jane: {math: "90", english: "76", art: "92" },
+  jack: {math: "65", english: "98", art: "100" }
+}
+
+# students.each do |name, grades|
+#   puts "#{name}- "
+#   grades.each do |subject, score|
+#     puts "#{subject}: #{score}"
+#   end
 # end
-
-# student[:contact].each do |via, info|
-#   puts "#{via.capitalize}: #{info}"
-# end
-
-# students = {
-#   john: {math: "76", english: "95", art: "100" },
-#   jane: {math: "90", english: "76", art: "92" },
-#   jack: {math: "65", english: "98", art: "100" }
-# }
-
-# # students.each do |name, grades|
-# #   puts "#{name}- "
-# #   grades.each do |subject, score|
-# #     puts "#{subject}: #{score}"
-# #   end
-# # end
 
 # # change data
 # p students[:jack]
