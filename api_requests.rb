@@ -1,5 +1,5 @@
-require 'net/http'
-require 'json'
+# require 'net/http'
+# require 'json'
 
 # url = URI("https://jsonplaceholder.typicode.com/posts/1") 
 # response = Net::HTTP.get(url) # 1) Send request, 2) Get response
@@ -21,7 +21,7 @@ require 'json'
 #   puts "#{i + 1}. #{index["text"]} \n"
 # end
 
-url = URI("https://pokeapi.co/api/v2/pokemon/1") 
-response = Net::HTTP.get(url) 
-data = JSON.parse(response) 
-puts "Pokemon Name: #{data["forms"][0]["name"]}"
+# url = URI("https://pokeapi.co/api/v2/pokemon/1") 
+# response = Net::HTTP.get(url) 
+# data = JSON.parse(response) 
+# puts "Pokemon Name: #{data["forms"][0]["name"]}"

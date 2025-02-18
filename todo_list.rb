@@ -63,49 +63,49 @@
 #DELETE
 
 
-puts "Let's create a To-Do List"
-todo_list = ["Laundry"]
+# puts "Let's create a To-Do List"
+# todo_list = ["Laundry"]
 
-loop do
-  puts " \n Menu 
-1) Add task
-2) View tasks
-3) Mark task as completed
-4) Delete a task
-5) Exit"
-puts "Please input 1, 2, 3, 4, or 5."
-choice = gets.chomp.to_i
+# loop do
+#   puts " \n Menu 
+# 1) Add task
+# 2) View tasks
+# 3) Mark task as completed
+# 4) Delete a task
+# 5) Exit"
+# puts "Please input 1, 2, 3, 4, or 5."
+# choice = gets.chomp.to_i
 
-  if choice == 1
-    # p add(todo_list)
-    puts "What task would you like to add?"
-    i_task = gets.chomp.capitalize
-    todo_list.push(i_task)
+#   if choice == 1
+#     # p add(todo_list)
+#     puts "What task would you like to add?"
+#     i_task = gets.chomp.capitalize
+#     todo_list.push(i_task)
     
-  elsif choice == 2
-    puts "To-do List:"
-    puts todo_list
+#   elsif choice == 2
+#     puts "To-do List:"
+#     puts todo_list
 
-  elsif choice == 3
-    puts "Which task would you like to mark as complete? Input the index number."
-    c_task = gets.chomp.to_i
-    todo_list.each_with_index do |index|
-    todo_list[c_task] = "Complete:" + index
-    end
-    puts "Task is marked as complete."
+#   elsif choice == 3
+#     puts "Which task would you like to mark as complete? Input the index number."
+#     c_task = gets.chomp.to_i
+#     todo_list.each_with_index do |index|
+#     todo_list[c_task] = "Complete:" + index
+#     end
+#     puts "Task is marked as complete."
 
-  elsif choice == 4
-    puts "What task would you like to delete? Input an index number."
-    r_task = gets.chomp.to_i
-    todo_list.delete_at(r_task)
+#   elsif choice == 4
+#     puts "What task would you like to delete? Input an index number."
+#     r_task = gets.chomp.to_i
+#     todo_list.delete_at(r_task)
     
-  elsif choice == 5
-    break
-    puts "To-do list done!"
-  else
-    puts "Invalid choice : please try again :) \n "
-  end
-end
+#   elsif choice == 5
+#     break
+#     puts "To-do list done!"
+#   else
+#     puts "Invalid choice : please try again :) \n "
+#   end
+# end
 
 
 

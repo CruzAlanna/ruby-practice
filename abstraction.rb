@@ -101,34 +101,34 @@
 # #when editing, make add and remove in the main, put the json r and w in the private
 
 
-# class Library
-#   attr_accessor :book
+class Library
+  attr_accessor :book
 
-#   def initialize(book)
-#     @book = book
-#   end
+  def initialize(book)
+    @book = book
+  end
 
-#   def borrow_book
-#     puts "#{@book} has been borrowed from the Library."
-#     remove
-#   end
+  def borrow_book
+    puts "#{@book} has been borrowed from the Library."
+    remove
+  end
 
-#   def return_book
-#     puts "#{@book} has been returned to the Library."
-#     add
-#   end
+  def return_book
+    puts "#{@book} has been returned to the Library."
+    add
+  end
 
 
-#   private
+  private
 
-#   def add
-#     puts "< #{@book} has been added to the Library. >"
-#   end
+  def add
+    puts "< #{@book} has been added to the Library. >"
+  end
 
-#   def remove
-#     puts "< #{@book} has been removed from the Library. >"
-#   end
-# end
+  def remove
+    puts "< #{@book} has been removed from the Library. >"
+  end
+end
 
 # student1 = Library.new("The Big Book")
 # student1.borrow_book
@@ -180,65 +180,65 @@
 
 # #from slack
 
-# require 'json'
+require 'json'
 
-# class Library
-#   def initialize(file_name = "library.json")
-#     @file_name = file_name
-#     load_database  # Load existing data if available
-#   end
+class Library
+  def initialize(file_name = "library.json")
+    @file_name = file_name
+    load_database  # Load existing data if available
+  end
 
-#   def add_book(book)
-#     @books << book
-#     puts "#{book} has been added to the library."
-#     update_database
-#   end
+  def add_book(book)
+    @books << book
+    puts "#{book} has been added to the library."
+    update_database
+  end
 
-#   def borrow_book(book)
-#     if @books.include?(book)
-#       @books.delete(book)
-#       puts "You've borrowed '#{book}'."
-#       update_database
-#     else
-#       puts "Sorry, '#{book}' is not available."
-#     end
-#   end
+  def borrow_book(book)
+    if @books.include?(book)
+      @books.delete(book)
+      puts "You've borrowed '#{book}'."
+      update_database
+    else
+      puts "Sorry, '#{book}' is not available."
+    end
+  end
 
-#   def return_book(book)
-#     @books << book
-#     puts "You've returned '#{book}'."
-#     update_database
-#   end
+  def return_book(book)
+    @books << book
+    puts "You've returned '#{book}'."
+    update_database
+  end
 
-#   private
+  private
 
-#   # Load the list of books from a JSON file (if it exists)
-#   def load_database
-#     if File.exist?(@file_name)
-#       file_contents = File.read(@file_name)
-#       @books = JSON.parse(file_contents)
-#     else
-#       @books = []
-#     end
-#   end
+  # Load the list of books from a JSON file (if it exists)
+  def load_database
+    if File.exist?(@file_name)
+      file_contents = File.read(@file_name)
+      @books = JSON.parse(file_contents)
+    else
+      @books = []
+    end
+  end
 
-#   # Write the current list of books to the JSON file
-#   def update_database
-#     File.open(@file_name, 'w') do |file|
-#       # Using 'pretty_generate' for readability
-#       file.write(JSON.pretty_generate(@books))
-#     end
-#   end
-# end
+  # Write the current list of books to the JSON file
+  def update_database
+    File.open(@file_name, 'w') do |file|
+      # Using 'pretty_generate' for readability
+      file.write(JSON.pretty_generate(@books))
+    end
+  end
+end
 
-# # --- Usage Example ---
+# --- Usage Example ---
 
-# library = Library.new
+library = Library.new
 
-# library.add_book("1984")
-# library.add_book("Brave New World")
-# library.borrow_book("1984")
-# library.return_book("1984")
+library.add_book("1984")
+library.add_book("Brave New World")
+library.borrow_book("1984")
+library.return_book("1984")
 
 
 #composition - when  theres a class thats composed of one or more objects from another class (cant have a functioning car without an engine and wheels)
